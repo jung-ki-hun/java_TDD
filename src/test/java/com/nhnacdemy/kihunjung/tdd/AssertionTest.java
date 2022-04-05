@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 class AssertionTest {
-    private final Calculater calculator = new Calculater();
+    private final Calculator calculator = new Calculator();
     private final Person person = new Person("Jordan", "Jeong");
 
     @Test

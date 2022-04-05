@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("🧮 계산기 테스트 🧮")
 class CalculatorTest {
-    private Calculater calculator = new Calculater();
+    private Calculator calculator = new Calculator();
     @Test
     @DisplayName("➕ 테스트")
     void add() {

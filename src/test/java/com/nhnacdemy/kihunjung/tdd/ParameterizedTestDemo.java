@@ -1,12 +1,11 @@
 package com.nhnacdemy.kihunjung.tdd;
 
-import static org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.AssertFalse.assertFalse;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.params.ParameterizedTestExtension.arguments;
+//import static org.junit.jupiter.params.ParameterizedTestExtension.arguments;
 import static org.junit.jupiter.params.provider.EnumSource.Mode.EXCLUDE;
 import static org.junit.jupiter.params.provider.EnumSource.Mode.MATCH_ALL;
 
@@ -60,9 +59,9 @@ public class ParameterizedTestDemo {
         assertNotNull(argument);
     }
 
-    static Stream<String> stringProvider() {
-        return Stream.of("apple", "banana");
-    }
+//    static Stream<String> stringProvider() {
+//        return Stream.of("apple", "banana");
+//    }
 
     @ParameterizedTest
     @MethodSource("stringIntAndListProvider")
@@ -72,11 +71,11 @@ public class ParameterizedTestDemo {
         assertEquals(2, list.size());
     }
 
-    static Stream<Arguments> stringIntAndListProvider() {   // 복수 인자 넘기기
-        return Stream.of(
-            arguments("apple", 1, List.of("a", "b")),
-            arguments("lemon", 2, List.of("x", "y"))
-        );
-    }
-    
+//    static Stream<Arguments> stringIntAndListProvider() {   // 복수 인자 넘기기
+//        return Stream.of(
+//            arguments("apple", 1, List.of("a", "b")),
+//            arguments("lemon", 2, List.of("x", "y"))
+//        );
+//    }
+//
 }
